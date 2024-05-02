@@ -2,8 +2,8 @@
 
 For Client Use:
   
-Open your web browser and go the URL https://friend-names.onrender.com
-Add query parameters to the URL to get info back about that friend. Ex. localhost:8000/api/ainsley or localhost:8000/api/laurel. Press enter to refresh your browser.
+Open your web browser and go the URL https://friend-names.onrender.com/api/
+Add query parameters to the URL to get info back about that friend. Ex. https://friend-names.onrender.com/api/ainsley or https://friend-names.onrender.com/api/laurel. Press enter to refresh your browser.
 You will see info about that friend in the browser in the form of a JSON object.
 
 *Note: If your query parameter is not the name of one of my friends, you will get back a JSON object that says the info is unknown. 
@@ -13,7 +13,8 @@ You will see info about that friend in the browser in the form of a JSON object.
 
 
 For Software Development:
-  
+
+This API is hosted on render.com. If you would like to run a server locally from your computer instead, you can do the following:  
 Download node.js, if you don't already have it. 
 Type node server.js into the terminal to start the server. Console will confirm that the server is running.
 Open your web browser and go the URL localhost:8000/api
