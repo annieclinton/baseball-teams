@@ -1,4 +1,9 @@
 document.querySelector('button').addEventListener('click', apiRequest)
+document.querySelector('button').addEventListener('click', check)
+
+function check(){
+    console.log('button is working')
+}
 
 async function apiRequest(){
     const cityName = document.querySelector('input').value
