@@ -2,41 +2,106 @@ const express = require('express')
 const app = express()
 const PORT = 8000
 
-const friends = {
-    'annie': {
-        'age' : 36,
-        'birthName': 'Annie Clinton' ,
-        'birthLocation': 'Greenbrae, CA'
+const teams = {
+    // 'arizona': {
+    //     'age' : 36,
+    //     'birthName': 'Annie Clinton' ,
+    //     'birthLocation': 'Greenbrae, CA'
+    // },
+    'arizona': {
+        'teamName' : 'Diamondbacks'
     },
-    'ainsley': {
-        'age' : 36,
-        'birthName': 'Ainsley Kaidi' ,
-        'birthLocation': 'Los Angeles, CA'
+    'atlanta': {
+        'teamName' : 'Braves' 
     },
-    'laurel': {
-        'age' : 36,
-        'birthName': 'Laurel Lang' ,
-        'birthLocation': 'Greenbrae, CA'
+    'baltimore': {
+        'teamName' : 'Orioles'
     },
-    'unknown': {
-        'age' : 0,
-        'birthName': 'Unknown' ,
-        'birthLocation': 'Unknown'
+    'boston': {
+        'teamName' : 'Red Sox'
+    },
+    'chicago': {
+        'teamName' : 'Cubs and White Sox'
+    },
+    'cincinnati': {
+        'teamName' : 'Reds'
+    },
+    'cleveland': {
+        'teamName' : 'Guardians'
+    },
+    'colorado': {
+        'teamName' : 'Rockies'
+    },
+    'detroit': {
+        'teamName' : 'Tigers'
+    },
+    'houston': {
+        'teamName' : 'Astros'
+    },
+    'kansas city': {
+        'teamName' : 'Royals'
+    },
+    'los angeles': {
+        'teamName' : 'Angels and Dodgers'
+    },
+    'miami': {
+        'teamName' : 'Marlins'
+    },
+    'milwaukee': {
+        'teamName' : 'Brewers'
+    },
+    'minnesota': {
+        'teamName' : 'Twins'
+    },
+    'new york': {
+        'teamName' : 'Mets and Yankees'
+    },
+    'oakland': {
+        'teamName' : 'Athletics'
+    },
+    'philadelphia': {
+        'teamName' : 'Phillies'
+    },
+    'pittsburgh': {
+        'teamName' : 'Pirates'
+    },
+    'san diego': {
+        'teamName' : 'Padres'
+    },
+    'san francisco': {
+        'teamName' : 'Giants'
+    },
+    'seattle': {
+        'teamName' : 'Mariners'
+    },
+    'st. louis': {
+        'teamName' : 'Cardinals'
+    },
+    'tampa bay': {
+        'teamName' : 'Rays'
+    },
+    'texas': {
+        'teamName' : 'Rangers'
+    },
+    'toronto': {
+        'teamName' : 'Blue Jays'
+    },
+    'washington': {
+        'teamName' : 'Nationals'
     }
-
 }
 
 app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html') //look in current directory for that file
 })
 
-app.get('/api/:name', (request, response) => {
-    const friendName = request.params.name.toLowerCase() //grabs the parameter out of the route
-    if(friends[friendName]){
-        response.json(friends[friendName]) //respond with the correct object based on the property name
-        // response.json(friends[friendName].birthName)
+app.get('/api/:city', (request, response) => {
+    const city = request.params.city.toLowerCase() //grabs the parameter out of the route
+    if(teams[city]){
+        response.json(teams[city]) //respond with the correct object based on the property name
+        // response.json(teams[city].teamName)
     }else{
-        response.json(friends['unknown'])
+        response.json(city['unknown'])
     }
     
 })
