@@ -1,4 +1,4 @@
-<body>
+
     <h1>Baseball Teams API</h1>
 
     <h2>What does this API do?</h2>
@@ -33,4 +33,3 @@
         <li><p>Go to localhost:8000 in your web browser to read this documentation </p></li>
         <li><p>Follow the instructions for query parameter use above using the local host. Ex. localhost:8000/api/kansas city </p></li>
     </ul>
-</body>
