@@ -91,6 +91,9 @@ const teams = {
     },
     'washington': {
         'teamName' : 'Nationals'
+    },
+    'unknown': {
+        'teamName' : 'Unknown'
     }
 }
 
@@ -104,7 +107,7 @@ app.get('/api/:city', (request, response) => {
         response.json(teams[city]) //respond with the correct object based on the property name
         // response.json(teams[city].teamName)
     }else{
-        response.json(city['unknown'])
+        response.json(teams['unknown'])
     }
     
 })

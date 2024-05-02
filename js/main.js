@@ -1,9 +1,9 @@
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
-    const city = document.querySelector('input').value
+    const cityName = document.querySelector('input').value
     try{
-        const response = await fetch(`https://baseball-nipq.onrender.com/api/${city}`)
+        const response = await fetch(`https://baseball-nipq.onrender.com/api/${cityName}`)
         const data = await response.json()
 
         console.log(data)
