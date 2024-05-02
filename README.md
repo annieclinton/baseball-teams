@@ -7,4 +7,5 @@ Add query parameters to the URL to get info back about that friend. Ex. localhos
 You will see info about that friend in the browser in the form of a JSON object.
 
 *Note: If your query parameter is not the name of one of my friends, you will get back a JSON object that says the info is unknown. 
+*Note: This project is hosted on Render for free. Since the hosting is free, it will spin down with inactivity, which can delay requests by 50 seconds or more.
 </pre>
