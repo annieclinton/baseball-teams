@@ -7,7 +7,7 @@
 ## How to Use this API:
 1. To use this API from anywhere, go to https://baseball-nipq.onrender.com.
     - Since the hosting is free, it will spin down with inactivity, which can delay requests by 50 seconds or more. Thanks for your patience.
-2. Add api/ and a query parameter (a city name) to the URL to get info back about that baseball team.  Press enter to refresh your browser.
+2. Add /api/ and a query parameter (a city name) to the URL to get info back about that baseball team.  Press enter to refresh your browser.
     - Ex. https://baseball-nipq.onrender.com/api/oakland or https://baseball-nipq.onrender.com/api/baltimore.
     - Your query parameter can have a space in it. Ex. https://baseball-nipq.onrender.com/api/kansas city
     - If your query parameter is not the name of a city with a MLB team, you will get back a JSON object that says the info is unknown.
