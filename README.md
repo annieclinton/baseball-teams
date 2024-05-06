@@ -1,3 +1,5 @@
+![alt text] (https://github.com/annieclinton/baseball-teams/blob/main/baseballTeamsAPISmall.png)
+
 ## Baseball Teams API
 
 ## What does this API do?
@@ -5,10 +7,13 @@
 - Add a city name as a query parameter to a URL and get back information about that city's baseball team. 
 - If the city is not listed in the API database, the browser will display 'Unknown'. 
 
-## How can this API be accessed?
+**Link to project:** https://baseball-nipq.onrender.com. 
 
-- You can access this API from anywhere by going to https://baseball-nipq.onrender.com.
-- Since the hosting on render.com is free, it will spin down with inactivity, which can delay requests by 50 seconds or more. Thanks for your patience.
+Please note, since this project is hosted using Render's free tier, loading may take 50 seconds or more.
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript, Express, MongoDB, Render 
 
 ## For Developers:
 
