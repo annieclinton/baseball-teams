@@ -1,4 +1,5 @@
-![alt text] (https://github.com/annieclinton/baseball-teams/blob/main/baseballTeamsAPISmall.png)
+![alt text](https://github.com/annieclinton/baseball-teams/blob/main/baseballTeamsAPISmall.png)
+
 
 ## Baseball Teams API
 
